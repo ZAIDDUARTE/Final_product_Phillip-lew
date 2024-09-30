@@ -13,8 +13,6 @@
        background-image: url(/assests/Firefox_Screenshot_2024-09-24T10-03-18.720Z.png);
        background-size: cover;
        background-position: center;
-       
-      
     }
   </style>
 
@@ -24,7 +22,7 @@
             <div class="flex py-5 px-5 flex-wrap gap-10 justify-between items-center  max-md:max-w-full">
               <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e6f4ef370376db6ee1260c6ecc75454a383b138b245a36651cdce49a40dba55b?placeholderIfAbsent=true&apiKey=3879a18f49be423fa8a3d20e87653b85" alt="Company Logo" class="object-contain shrink-0 self-stretch my-auto aspect-[3.39] w-[129px]" />
               <nav class="flex me-5  gap-2.5 items-center self-stretch my-auto min-w-[240px]">
-                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cff38862dba12d26c8aa0eb3f359a5a53eabc0f0e62c9f46cfab0cebe938c2de?placeholderIfAbsent=true&apiKey=3879a18f49be423fa8a3d20e87653b85" alt="Navigation Icon" class="object-contain shrink-0 gap-0 self-stretch my-auto aspect-[2.11] w-[97px]" />
+               
                 
                   <button class="overflow-hidden gap-2 self-stretch px-5 py-3.5 my-auto text-base font-medium leading-none text-center text-indigo-500 whitespace-nowrap bg-white rounded-lg border border-indigo-500 border-solid">
                     Upgrade
@@ -45,7 +43,9 @@
     <div id="dropdownMenu" class="hidden origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
       <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
         <a href="/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Light-welcome</a>
-        <a href="/theme/Dark-Mode.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dark-welcome</a>
+        <a href="Dark-Mode.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dark-welcome</a>
+        <a href="/loggedin-light.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Light-logged-welcome</a>
+        <a href="/theme/loggedin-Dark-Mode.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dark-logged-welcome</a>
         <a href="/Chat's/Welcome-chat.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Chat-without login</a>
         <a href="/Chat's/Loggedin-chat.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Chat-with login</a>
         <a href="/Chat's/Premium-chat.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Chat-premium</a>
@@ -117,10 +117,7 @@
           <span class="flex-1 text-start shrink self-stretch my-auto basis-0">Feedback</span>
         </button>
         <hr class="w-full min-h-0 bg-gray-200 border border-solid my-1" />
-        <button class="flex gap-2 items-center p-2 w-full text-base leading-none text-gray-800 bg-white rounded-lg">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/4b9474ffe132ce66aabb558807168c3c0273b8314750849210b4af8e0f1f89ad?placeholderIfAbsent=true&apiKey=3879a18f49be423fa8a3d20e87653b85" class="object-contain shrink-0 self-stretch my-auto w-5 aspect-square" alt="" />
-          <span class="flex-1 text-start shrink self-stretch my-auto basis-0">Log Out</span>
-        </button>
+        
       </nav>
     </div>
   </div>
@@ -130,66 +127,16 @@
             </div>
           </header>
           <main class="flex border border-solid rounded-xl  relative flex-wrap self-center w-full max-w-[1400px] max-md:max-w-full">
-            <aside id="mobile-sidebar" class="fixed inset-y-0 left-0 z-40 bg-gray-100 transform -translate-x-full transition-transform duration-300 ease-in-out md:translate-x-0 md:relative  border-solid  rounded-l-xl">
-              <!-- Sidebar container with scroll functionality for all screen sizes -->
-              <div class="flex flex-col w-[100%] ml-0 h-full ">
-                <div class="flex relative max-md:mt-7">
-                  <nav class="flex flex-auto gap-1 self-start py-3 pr-4 pl-2 mr-0 bg-gray-100 border-r border-solid min-h-[924px] rounded-l-xl">
-                    <div class="flex flex-col justify-between w-[46px] max-md:hidden">
-                      <div class="flex flex-col w-full">
-                        <div class="flex flex-col justify-center w-full">
-                          <div class="flex flex-col justify-center mt-2.5 w-full"></div>
-                            <div class="flex overflow-hidden gap-2.5 justify-center items-center px-px min-h-[32px] w-[46px]">
-                              <img loading="lazy" src="/assests/3-circle-icon.png" alt="History icon" class="object-contain self-stretch my-auto w-5 aspect-[0.91]" />
-                            </div>
-                            <h2 class="self-start ps-2 text-xs font-semibold leading-snug text-center text-gray-900">
-                              Menu
-                            </h2>
-                          </div>
-                        <div class="flex flex-col justify-center mt-2.5 w-full">
-                          <div class="flex overflow-hidden gap-2.5 justify-center items-center px-px min-h-[32px] w-[46px]">
-                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/42bd720ba50f75d7496a365240cc6dba6168a8d5c6b0c2cead159e578b55551b?placeholderIfAbsent=true&apiKey=3879a18f49be423fa8a3d20e87653b85" alt="History icon" class="object-contain self-stretch my-auto w-5 aspect-[0.91]" />
-                          </div>
-                          <h2 class="self-start text-xs font-semibold leading-snug text-center text-gray-900">
-                            History
-                          </h2>
-                        </div>
-                        <div class="flex flex-col justify-center mt-2.5 w-full">
-                          <div class="flex gap-2.5 justify-center items-center min-h-[32px] w-[46px]">
-                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/387bcf3f5c8409b3d889c832e300707803c42b682871a847eec85d232884b099?placeholderIfAbsent=true&apiKey=3879a18f49be423fa8a3d20e87653b85" alt="Explore icon" class="object-contain self-stretch my-auto aspect-square w-[22px]" />
-                          </div>
-                          <h2 class="self-start text-xs font-semibold leading-snug text-center text-gray-900">
-                            Explore
-                          </h2>
-                        </div>
-                      </div>
-                      <div class="flex flex-col justify-center items-center mt-[668px] w-[46px] max-md:mt-10">
-                        <div style="cursor: pointer;" id="openPrivateModeBtn" class="flex flex-col justify-center cursor:pointer items-center w-full ">
-                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8f17af50e5b09736f32e4c5b2b689eebdfa66b00f8f9495cc982a63d2fa68ed6?placeholderIfAbsent=true&apiKey=3879a18f49be423fa8a3d20e87653b85" alt="Anonymous mode icon" class="object-contain  aspect-[1.22] w-[22px]" />
-                        </div>
-                        <h2 style="cursor: pointer;" class="text-xs  font-semibold leading-4 text-center text-gray-900">
-                          Anon <br>ymous Mode
-                        </h2>
-                      </div>
-                    </div>
-                  
-                        
             
-            
-                  </nav>
-                </div>
-              </div>
-            </aside>
-            
-            <section class="flex  flex-col grow shrink-0 items-center px-20 bg-gray-50 border border-solid rounded-r-xl basis-0 w-fit max-md:px-5 max-md:max-w-full">
+            <section class="flex  flex-col grow shrink-0 items-center px-20 bg-gray-50 border border-solid rounded-xl basis-0 w-fit max-md:px-5 max-md:max-w-full">
               <div class="flex flex-col w-full max-w-[1338px] max-md:max-w-full">
                 <div class="flex flex-col justify-center  w-full min-h-[814px] max-md:max-w-full">
                   <div class="flex flex-col w-full max-md:max-w-full">
                     <header class="flex flex-col items-center w-full text-center text-gray-900 max-md:max-w-full">
-                      <h1 class="text-4xl font-medium  tracking-tighter pt-20 md:pt-0 leading-10 max-md:max-w-full">
-                        Navigate Stress, Boost Confidence, and Gain <br /> Emotional Clarity with Beyond Happiness
+                      <h1 class="text-5xl font-medium  tracking-tighter pt-20 md:pt-0 leading-10 max-md:max-w-full">
+                        Master Your Emotional Well-Being with Next-Gen AI
                       </h1>
-                      <p class="mt-2 text-base max-md:max-w-full">Your Ultimate Emotional Support Companion</p>
+                      <p class="mt-5 text-base max-md:max-w-full">Your Personalized Emotional and Personal Growth Companion</p>
                     </header>
                     <div class="flex flex-col mt-8 w-full max-md:max-w-full">
                       <div class="flex flex-wrap gap-4 w-full max-md:max-w-full">
@@ -197,21 +144,28 @@
                           <div class="flex flex-col w-full">
                             <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7c14428a764c6a052b8ca6afa883990e8eff674be1491ebebe878b6a77b2713b?placeholderIfAbsent=true&apiKey=3879a18f49be423fa8a3d20e87653b85" alt="" class="object-contain w-8 aspect-square mt-5 ms-5" />
                             <h2 class="mt-3 text-lg font-semibold tracking-tight ms-5 leading-7 text-gray-50">
-                              Flexible, Personalized Check-Ins Anytime, Anywhere
+                                Personalized, Adaptive Emotional Support
+
                             </h2>
                             <p class="mt-3 mb-5 ms-5 text-base leading-6 text-indigo-200">
-                              Lorem ipsum dolor sit amet consectetur. Suspendisse viverra convallis donec magna morbi.
+                                Experience human-like, evidence-based emotional guidance that evolves with you, learning from your past to provide deeply personalized, context-aware support—in over 100 languages.
                             </p>
                           </div>
                         </article>
                         <article class="flex flex-col flex-1 shrink justify-center p-6 bg-indigo-500 rounded-2xl border border-indigo-200 border-solid basis-0 min-w-[240px] pb-[var(--sds-size-space-600)] pl-[var(--sds-size-space-600)] pr-[var(--sds-size-space-600)] pt-[var(--sds-size-space-600)] max-md:px-5">
                           <div class="flex flex-col w-full">
-                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b1e701b68544a9f95f3285b39737e887d98aa63987fb6ef9da3ce9cfb6ba54c2?placeholderIfAbsent=true&apiKey=3879a18f49be423fa8a3d20e87653b85" alt="" class="object-contain ms-5 mt-5 w-8 aspect-square" />
-                            <h2 class="mt-3 text-lg font-semibold tracking-tight ms-5 leading-7 text-gray-50">
-                              Empathetic Conversations That Evolve With You
+                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b1e701b68544a9f95f3285b39737e887d98aa63987fb6ef9da3ce9cfb6ba54c2?placeholderIfAbsent=true&apiKey=3879a18f49be423fa8a3d20e87653b85" alt="" class="object-contain ms-5  w-8 aspect-square" />
+                            <h2 class="mt-2 text-lg font-semibold tracking-tight ms-5 leading-7 text-gray-50">
+                                
+                                Proactive, Predictive Emotional Guidance
+
+
+
                             </h2>
                             <p class="mt-3 ms-5 mb-5 text-base leading-6 text-indigo-200">
-                              Lorem ipsum dolor sit amet consectetur. Suspendisse viverra convallis donec magna morbi.
+                                Anticipate your emotional needs with AI that analyzes patterns and trends, offering preventive support before challenges escalate
+
+
                             </p>
                           </div>
                         </article>
@@ -219,10 +173,11 @@
                           <div class="flex flex-col w-full">
                             <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6956f3757af30b29fed53a436bd94c055aed1636ac1085bcd0c051aa62fd44cd?placeholderIfAbsent=true&apiKey=3879a18f49be423fa8a3d20e87653b85" alt="" class="object-contain mt-5 ms-5 w-8 aspect-square" />
                             <h2 class="mt-3 text-lg font-semibold tracking-tight ms-5 leading-7 text-gray-50">
-                              24/7 On-Demand Emotional <br /> Tools
+                                Intellectual, Personal, and Creative Exploration
+
                             </h2>
                             <p class="mt-3 ms-5 mb-5 text-base leading-6 text-indigo-200">
-                              Lorem ipsum dolor sit amet consectetur. Suspendisse viverra convallis donec magna morbi.
+                                Foster personal growth, professional development, and cognitive enhancement while inspiring fun, intellectual discovery, creativity, and exploration of curiosities.
                             </p>
                           </div>
                         </article>
@@ -235,39 +190,33 @@
                       <div class="flex flex-col mt-6 w-full text-base leading-6 text-gray-900 max-md:max-w-full">
                         <div class="flex flex-wrap gap-4 justify-center w-full max-md:max-w-full">
                           <button class="flex flex-col flex-1 shrink justify-center self-start text-start p-5 bg-gray-100 rounded-2xl basis-0 min-w-[240px]">
-                            <span class="w-full">How can I feel a sense of belonging when I feel disconnected?</span>
+                            <span class="w-full">What's one simple thing I can do today to reclaim some energy and restore balance in my work-life routine?</span>
                           </button>
                           <button class="flex flex-col flex-1 shrink justify-center text-start p-5 bg-gray-100 rounded-2xl basis-0 min-w-[240px]">
-                            <span class="w-full">What are gentle ways to begin healing from emotional pain and trauma?</span>
+                            <span class="w-full">How can I start recognizing my skills and achievements instead of always feeling like I'm falling behind?</span>
                           </button>
-                          <button class="flex flex-col flex-1 shrink justify-center text-start p-5 bg-gray-100 rounded-2xl basis-0 min-w-[240px]">
-                            <span class="w-full">How can I regain a sense of control when life feels overwhelming?</span>
+                          <button class="flex flex-col flex-1 shrink justify-center text-start  pb-5 px-5 bg-gray-100 rounded-2xl basis-0 min-w-[240px]">
+                            <span class="w-full">I’m feeling really overwhelmed. What’s a quick way to ground myself and get back on track?</span>
                           </button>
                         </div>
                       </div>
-                      <button class="overflow-hidden gap-1.5 self-center px-3 py-2 mt-6 text-xs leading-none text-center text-gray-700 bg-white rounded-lg border border border-solid shadow">
-                        Explore More
-                      </button>
+                     
                     </div>
                   </div>
                 </div>
                 <div class="flex gap-3 justify-center self-center py-3 w-full">
                   <div class="flex flex-col flex-1 shrink w-full basis-0 min-w-[240px] max-md:max-w-full">
                     <form class="flex flex-wrap gap-3 w-full min-h-[60px] max-md:max-w-full mb-20 md:mb-0">
-                      <label for="messageInput" class="sr-only">Type your message</label>
-                      <input id="messageInput" type="text" placeholder="Type your message in any language..." class="flex flex-1 shrink gap-3 items-center px-3 py-2 h-full text-sm leading-none text-gray-400 bg-white rounded-lg border border border-solid basis-4  max-md:max-w-full" />
+                      <label for="messageInput" class="sr-only">Type your message in over 100 languages...</label>
+                      <input id="messageInput" type="text" placeholder="Type your message in over 100 languages..." class="flex flex-1 shrink gap-3 items-center px-3 py-2 h-full text-sm leading-none text-gray-400 bg-white rounded-lg border border border-solid basis-4  max-md:max-w-full" />
                       <button type="submit" class="gap-2 self-stretch px-5 py-3.5 h-full text-base font-medium leading-none text-center text-white whitespace-nowrap bg-indigo-500 rounded-lg border border-indigo-500 border-solid">
                         Send
                       </button>
-                      <button id="openPrivateModeBtnTwo" type="button" aria-label="Voice Input" class="flex flex-col justify-center items-center my-auto w-8">
-                        <div class="flex flex-col justify-center items-center min-h-[32px] w-[45px]">
-                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2fcda455f5244197dda9e9d0f0abf5e69fe3aa759b2df85d0abc1949cf5923de?placeholderIfAbsent=true&apiKey=3879a18f49be423fa8a3d20e87653b85" alt="" class="object-contain aspect-[1.22] w-[22px]" />
-                        </div>
-                      </button>
+                     
                     </form>
-                    <p style="color: #B5B5B5;" class="self-center mt-20 md:mt-5 pt-20 md:pt-0 mt-5 text-xs leading-snug text-center  max-md:max-w-full">
+                    <p class="self-center mt-20 md:mt-5 pt-20 md:pt-0 mt-5 text-xs leading-snug text-center  max-md:max-w-full">
                       Our Al offers guidance but is not a substitute for professional therapy or medical advice.
-                      <a href="#" class="text-indigo-500 underline">Learn more about our limitations here.</a>
+                      <a href="#" class="text-indigo-500 underline">Learn more about our terms and limitations here.</a>
                     </p>
                   </div>
                 </div>
@@ -573,3 +522,13 @@ document.getElementById("closeSettingsBtn").addEventListener("click", function (
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
